@@ -1,0 +1,242 @@
+.navbar-brand{
+    padding:10px 15px;
+}
+.navbar {
+    margin-bottom: 0px;     /*导航条有默认的  20px*/
+}
+.jumbotron{
+    background:url("../images/bg.jpg") center center no-repeat;
+    padding: 10px 0 0 0;   /*去掉 巨幕的padding值*/
+    margin-bottom: 0px;
+}
+.banner-title{
+    color: yellow;
+    line-height: 1px;
+    font-size: 24px;
+    margin-top: 90px;
+}
+
+.jumbotron .banner-detail{  /*样式的权重 不够 加 .jumbotron*/
+    color: white;
+    font-size: 14px;
+    line-height: 28px;     /*行高设置的是 每行 之间的距离*/
+    margin-top: 24px;
+}
+
+/*查询*/
+@media (max-width: 1200px) {
+    .banner-title{
+        margin-top: 60px;
+    }
+}
+@media (max-width: 992px) {
+    .banner-title{
+        margin-top: 10px;
+    }
+}
+
+.gray-bg{
+    background-color: #f2f2f2;
+}
+.common-title{
+    color: #5bcd42;
+    font-size: 30px;
+    line-height: 1;     /*行高设置的是 每行 之间的距离*/
+    margin-top: 45px;
+}
+.common-detail{
+    color: #7a7a7a;
+    font-size: 14px;
+    line-height: 28px;
+    margin-top: 18px;
+}
+
+.list-con{
+    margin-top: 196px;
+}
+
+.list-item{
+    height: 112px;
+    padding-left: 138px;
+    /*no-repeat 去重复*/
+    background: url("../images/icons.png") left top no-repeat;  /*left和top作用就是定位背景图片的位置*/
+    margin-bottom: 39px;
+    overflow: hidden;   /*去除塌线*/
+}
+
+.list-item h3{
+    font-size: 16px;
+    color: #4e4e4e;
+    font-weight: bold;   /*font-weight 属性设置文本的粗细。*/
+}
+
+.list-item p{
+    font-size: 14px;
+    color: #7a7a7a;
+    line-height: 28px;
+}
+.list02{background-position: left -112px;}
+.list03{background-position: left -224px;}
+.list04{background-position: left -336px;}
+.list05{background-position: left -448px;}
+.list06{background-position: left -560px;}
+
+.case-list{
+    padding-top: 125px;
+    margin-left: 15px;
+    margin-right: 15px;
+    /*与下面之间的间距*/
+    margin-bottom: 57px;
+}
+
+.case-list img{
+    width: 100%;
+}
+
+.case-list .col-lg-3{
+    padding: 0;  /*去掉 栅格之间的间距*/
+    position: relative;
+    /*position：absolute这个是绝对定位；它不会随着窗口大小变化，只是固定在一个特定的坐标轴上面；
+position：relative 这是相对定位啊！和上面的相反，它可以随窗口大小变化。但大小仍然不会变。
+                   要是你设置成width:100%;height:100%;这样就会随着窗口变大变小。。。*/
+}
+
+@media (max-width: 400px) {
+    .case-list .col-xs-6{
+        width: 100%;   /*栅格容器 每个占一行*/
+    }
+}
+
+.case-list .col-lg-3 .mask{
+
+    /* 如果去掉position：absolute ，拓展一种居中用法，先定位，再设置 left：0;right：0;margin:auto 可以使元素垂直居中。
+     设置 top:0;bottom:0;margin:0 可以使元素水平居中。当然，设置四个值都是0；margin：0；后，这个元素就在正中间了。*/
+    position: absolute;
+    left: 0;
+    top: 0px;
+    width: 100%;
+    height: 100%;   /*栅格的高度和宽度100%*/
+    background-color: #b5cd42;
+    color: #fff;
+    padding: 10px;   /*左右10px  字体间距*/
+    display: none;    /*首先先让他隐藏*/
+}
+
+.case-list .col-lg-3:hover .mask {
+    display: block; /*鼠标放上去显示*/
+}
+
+.blue-bg{
+    background-color: #2c8fba;
+}
+
+.blue-bg .common-title{
+    color: #ffffff;
+}
+
+.blue-bg .common-detail{
+    color: #ffffff;
+}
+
+.logs-list{
+    margin-bottom: 40px;
+}
+
+.logs-list a{
+    display: block;  /*行内元素 变块元素   让每个a 标签都变得块元素*/  /*a标签本身是内联元素*/
+    width: 200px;
+    height: 180px;
+    background: url("../images/logos.png")  left top no-repeat;
+    margin: 0 auto;   /*margin:0 auto 设置对象上下间距为0，左右自动*/
+}
+
+.logs-list .col-lg-2{
+    width: 20%;
+}
+.logs-list .log02{background-position: left -180px;}
+.logs-list .log03{background-position: left -360px;}
+.logs-list .log04{background-position: left -540px;}
+.logs-list .log05{background-position: left -720px;}
+
+@media (max-width: 1200px) {
+    .logs-list .col-lg-2{
+        width: 33%;
+        float: left;
+    }
+}
+
+@media (max-width: 992px) {
+    .logs-list .col-lg-2{
+        width: 50%;
+        float: left;
+    }
+}
+
+@media (max-width: 500px) {
+    .logs-list .col-lg-2{
+        width: 100%;
+        float: left;
+    }
+}
+
+.link-lists{
+    margin: 72px 0;
+}
+
+.link-lists dt{
+    font-size: 20px;
+    color: #191919;
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.link-lists dd{
+     line-height: 30px;
+}
+
+.link-lists dd a{
+  color: #a0a0a0;
+}
+
+.dark-bg{
+    background-color: #2e2e2e;
+    border-top: 5px solid #2994bf;
+}
+
+.footer{
+  /*  height: 82px;*/
+    min-height: 82px;  /*最小高度82px  响应式*/
+}
+
+.footer .text-left {
+    color: white;
+    line-height: 82px;
+}
+
+.footer .text-right{
+    line-height: 82px;
+}
+
+.footer .text-right a{
+    color: white;
+    padding-left: 10px;   /*a 标签之间的间距*/
+
+}
+
+@media (max-width: 768px) {
+
+    .footer .text-left {
+        line-height: 60px;
+    }
+
+    .footer .text-right{
+        text-align: left;
+        line-height: 20px;
+        margin-bottom: 15px;
+    }
+
+    .footer .text-right a{
+        padding-left: 0px;   /*取消 原先 a 标签之间的间距*/
+        padding-right: 10px;
+    }
+}
